@@ -48,9 +48,9 @@ or browse it in the Upstash console's Data Browser.
 2. In the Vercel dashboard: **Add New → Project**, import the repo. Framework preset auto-detects as Next.js — no
    build command changes needed.
 3. **Storage → Marketplace Database Providers → Upstash → Redis**, create a database, and connect it to this
-   project. Vercel injects `UPSTASH_REDIS_REST_URL` / `UPSTASH_REDIS_REST_TOKEN` (or `KV_REST_API_URL` /
-   `KV_REST_API_TOKEN` depending on the integration version — if you get the `KV_*` names, add
-   `UPSTASH_REDIS_REST_URL`/`UPSTASH_REDIS_REST_TOKEN` project env vars pointing to the same values).
+   project. Vercel injects either `UPSTASH_REDIS_REST_URL` / `UPSTASH_REDIS_REST_TOKEN` or `KV_REST_API_URL` /
+   `KV_REST_API_TOKEN` depending on the integration version — `src/lib/redis.ts` reads either naming, so nothing
+   to rename or copy between variables either way.
 4. **Settings → Environment Variables**, add `NEXT_PUBLIC_SITE_URL` set to your `*.vercel.app` URL (you'll know it
    after the first deploy — redeploy once after setting it).
 5. Deploy. First deploy can happen before step 3/4 are done; the page works, only the form submission needs Redis.
