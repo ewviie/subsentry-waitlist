@@ -6,7 +6,7 @@ import { WaitlistForm } from "@/components/waitlist-form";
 export function Hero() {
   return (
     <section className="mx-auto max-w-6xl px-5 pb-16 pt-6 sm:px-8 sm:pb-24 sm:pt-8 lg:pb-28">
-      <div className="grid gap-16 lg:grid-cols-2 lg:items-center lg:gap-16">
+      <div className="grid gap-16 lg:grid-cols-2 lg:items-start lg:gap-16">
         <div>
           <div className="inline-flex items-center gap-3 font-heading text-lg font-bold text-foreground">
             <span aria-hidden="true" className="relative flex size-9 items-center justify-center">
