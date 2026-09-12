@@ -38,9 +38,14 @@ export default function PrivacyPage() {
           <section>
             <h2 className="font-heading text-lg font-semibold text-foreground">Removing your email</h2>
             <p className="mt-2 text-muted-foreground">
-              Email us at{" "}
-              <a href="mailto:hello@subsentry.app" className="text-foreground underline underline-offset-2">
-                hello@subsentry.app
+              DM{" "}
+              <a
+                href="https://www.instagram.com/subsentryapp"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-foreground underline underline-offset-2"
+              >
+                @subsentryapp on Instagram
               </a>{" "}
               and we&rsquo;ll remove it from the waitlist.
             </p>
