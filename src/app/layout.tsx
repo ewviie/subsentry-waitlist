@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     siteName: "SubSentry",
     title: TITLE,
     description: DESCRIPTION,
-    images: [{ url: "/dashboard-screenshot.jpg", width: 1512, height: 794, alt: "The SubSentry dashboard" }],
+    images: [{ url: "/dashboard-screenshot.jpg", width: 1568, height: 634, alt: "The SubSentry subscriptions list" }],
   },
   twitter: {
     card: "summary_large_image",

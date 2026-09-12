@@ -23,9 +23,9 @@ export function Hero() {
         <div className="overflow-hidden rounded-2xl border border-border bg-card shadow-2xl shadow-black/10">
           <Image
             src="/dashboard-screenshot.jpg"
-            alt="The SubSentry dashboard showing monthly spend, subscription health score, and the largest recurring expense"
-            width={1512}
-            height={794}
+            alt="The SubSentry subscriptions list, showing tracked subscriptions with cost, category, and renewal date, and a high-cost flag on the largest one"
+            width={1568}
+            height={634}
             priority
             className="w-full"
           />

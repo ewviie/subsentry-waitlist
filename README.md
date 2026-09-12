@@ -56,7 +56,9 @@ or browse it in the Upstash console's Data Browser.
 
 ## Brand assets
 
-- `public/logo-mark.png` and `public/dashboard-screenshot.jpg` are copied from the main SubSentry repo
-  (`SubSentry/public/logo-mark.png`, `SubSentry/public/dashboard-screenshot-v2.jpg`) so this stays a real product
-  screenshot, not a mockup.
+- `public/logo-mark.png` is copied from the main SubSentry repo (`SubSentry/public/logo-mark.png`).
+- `public/dashboard-screenshot.jpg` is a real screenshot of the live app's `/subscriptions` page (a throwaway demo
+  account, seeded with sample subscriptions for the shot — not a mockup). Retake it the same way if it goes stale:
+  sign up a fresh demo account in the main app, add a few subscriptions, screenshot the page, crop out any dev-only
+  UI (e.g. the local dev-plan banner), and drop it in here at the same filename.
 - `src/app/icon.png` / `apple-icon.png` are the same logo mark, used by Next.js's automatic favicon convention.
