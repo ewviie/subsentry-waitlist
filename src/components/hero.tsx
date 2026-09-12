@@ -2,6 +2,7 @@ import Image from "next/image";
 import { PhoneFrame } from "@/components/phone-frame";
 import { SentryRing } from "@/components/sentry-ring";
 import { WaitlistForm } from "@/components/waitlist-form";
+import { SocialLink } from "@/components/social-link";
 import { Reveal } from "@/components/motion/reveal";
 
 export function Hero() {
@@ -41,7 +42,7 @@ export function Hero() {
           <Reveal delay={0.24}>
             <div className="mt-9 max-w-md">
               <WaitlistForm />
-              <p className="mt-3 text-sm text-muted-foreground">Free during beta · No card required</p>
+              <SocialLink />
             </div>
           </Reveal>
         </div>

@@ -1,4 +1,5 @@
 import { WaitlistForm } from "@/components/waitlist-form";
+import { SocialLink } from "@/components/social-link";
 import { RevealOnScroll } from "@/components/motion/reveal";
 
 export function FinalCta() {
@@ -14,7 +15,7 @@ export function FinalCta() {
           </p>
           <div className="mx-auto mt-8 max-w-md">
             <WaitlistForm />
-            <p className="mt-3 text-sm text-muted-foreground">Free during beta · No card required</p>
+            <SocialLink />
           </div>
         </RevealOnScroll>
       </div>
