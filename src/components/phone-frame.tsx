@@ -1,4 +1,7 @@
+"use client";
+
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 // A stylized iPhone-style bezel around a real app screenshot — the "phone
 // thingy" from the reference. The screenshot itself is a genuine crop of
@@ -6,7 +9,11 @@ import Image from "next/image";
 // source note in the README), not a fabricated mockup.
 export function PhoneFrame() {
   return (
-    <div className="relative">
+    <motion.div
+      className="relative"
+      whileHover={{ y: -4 }}
+      transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
+    >
       <div className="relative rounded-[2.4rem] bg-neutral-900 p-3 shadow-2xl shadow-black/30">
         {/* Side buttons */}
         <span aria-hidden="true" className="absolute -left-[3px] top-20 h-7 w-[3px] rounded-l-sm bg-neutral-800" />
@@ -32,6 +39,6 @@ export function PhoneFrame() {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }

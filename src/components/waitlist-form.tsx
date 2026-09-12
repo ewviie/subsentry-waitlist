@@ -49,7 +49,10 @@ export function WaitlistForm({ id, className }: { id?: string; className?: strin
 
   if (joined) {
     return (
-      <div
+      <motion.div
+        initial={{ opacity: 0, y: 6 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
         id={id}
         role="status"
         className={cn(
@@ -63,7 +66,7 @@ export function WaitlistForm({ id, className }: { id?: string; className?: strin
         <p className="text-sm font-medium text-foreground">
           {status === "duplicate" ? message : "You're on the list — we'll email you when SubSentry is ready."}
         </p>
-      </div>
+      </motion.div>
     );
   }
 
