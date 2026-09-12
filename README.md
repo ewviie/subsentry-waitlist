@@ -8,7 +8,8 @@ it can go live on a `vercel.app` URL before the product itself launches.
 - Next.js (App Router) + TypeScript
 - Tailwind CSS v4 — same monochrome + emerald palette and Space Grotesk / Plus Jakarta Sans typography as the main
   SubSentry app
-- Framer Motion for the two intentionally subtle motion touches (nav entrance, button tap)
+- Framer Motion for subtle entrance/scroll-reveal animation throughout (`src/components/motion/`) — global
+  `MotionConfig reducedMotion="user"` so it all respects the OS-level reduced-motion setting automatically
 - Upstash Redis for waitlist storage + rate limiting (`@upstash/redis`, `@upstash/ratelimit`)
 
 ## Local development
