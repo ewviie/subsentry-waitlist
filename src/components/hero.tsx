@@ -37,9 +37,9 @@ export function Hero() {
           </div>
         </div>
 
-        <div>
+        <div className="mx-auto w-[280px] sm:w-[300px] lg:mx-0 lg:ml-auto lg:w-[320px]">
           <PhoneFrame />
-          <p className="mt-6 text-center text-sm text-muted-foreground lg:text-right">
+          <p className="mt-6 text-center text-sm text-muted-foreground">
             Your subscriptions. One clear picture.
           </p>
         </div>
