@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { PhoneFrame } from "@/components/phone-frame";
 import { SentryRing } from "@/components/sentry-ring";
 import { WaitlistForm } from "@/components/waitlist-form";
 
@@ -37,17 +38,10 @@ export function Hero() {
         </div>
 
         <div>
-          <div className="overflow-hidden rounded-2xl border border-border bg-card shadow-2xl shadow-black/10">
-            <Image
-              src="/dashboard-screenshot.jpg"
-              alt="The SubSentry subscriptions list, showing tracked subscriptions with cost, category, and renewal date, and a high-cost flag on the largest one"
-              width={1568}
-              height={634}
-              priority
-              className="w-full"
-            />
-          </div>
-          <p className="mt-4 text-center text-sm text-muted-foreground">Your subscriptions. One clear picture.</p>
+          <PhoneFrame />
+          <p className="mt-6 text-center text-sm text-muted-foreground lg:text-right">
+            Your subscriptions. One clear picture.
+          </p>
         </div>
       </div>
     </section>

@@ -61,4 +61,10 @@ or browse it in the Upstash console's Data Browser.
   account, seeded with sample subscriptions for the shot — not a mockup). Retake it the same way if it goes stale:
   sign up a fresh demo account in the main app, add a few subscriptions, screenshot the page, crop out any dev-only
   UI (e.g. the local dev-plan banner), and drop it in here at the same filename.
+- `public/app-mobile-preview.jpg` is a real screenshot of the live app's `/subscriptions` page captured at an
+  actual 390px mobile viewport. Wrapped in a CSS iPhone-style bezel by the `PhoneFrame` component
+  (`src/components/phone-frame.tsx`). The main app blocks iframing (so a simple embedded-iframe capture doesn't
+  work on it) and browser window-resize automation can be unreliable — a small one-off Playwright script (run from
+  the main app's repo, where Playwright is already a dev dependency) logging into a throwaway demo account with
+  `viewport: { width: 390, height: 844 }` is the reliable way to retake it if it goes stale.
 - `src/app/icon.png` / `apple-icon.png` are the same logo mark, used by Next.js's automatic favicon convention.
