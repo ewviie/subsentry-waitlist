@@ -20,6 +20,14 @@ export function Hero() {
                   width={36}
                   height={36}
                   priority
+                  // unoptimized: this is a tiny (36px), already-sized-for-
+                  // its-one-use-case static asset — routing it through
+                  // Vercel's on-demand Image Optimization function buys
+                  // nothing but exposes a public, unauthenticated endpoint
+                  // that accepts arbitrary width/quality combinations, each
+                  // a fresh billable Function Invocation (see next.config.ts's
+                  // own comment on the incident this fixes).
+                  unoptimized
                   className="size-full rounded-full object-cover"
                 />
               </span>

@@ -27,6 +27,14 @@ export function PhoneFrame() {
             width={780}
             height={1567}
             priority
+            // unoptimized: see next.config.ts's own comment on the incident
+            // this closes — a public image-optimizer endpoint that accepts
+            // arbitrary width/quality combos is a cheap way to run up
+            // Function Invocations for near-zero attacker cost. This is the
+            // single largest image on the site (a real screenshot, not a
+            // tiny logo), so it's also the one where a scan across many
+            // width/quality variants would generate the most invocations.
+            unoptimized
             className="w-full"
           />
           {/* Notch */}
